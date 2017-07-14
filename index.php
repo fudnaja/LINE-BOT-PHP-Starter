@@ -14,7 +14,7 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 
-			$pieces = explode(" ", $text);
+			//$pieces = explode(" ", $text);
 			//echo $pieces[0]; // piece1
 			//echo $pieces[1]; // piece2
 
@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' =>  $pieces[0] . "\r\n" . $pieces[1]
+				'text' => $text
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
