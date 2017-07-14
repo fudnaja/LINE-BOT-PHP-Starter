@@ -22,10 +22,9 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			$mrgoat =$pieces[0] . "\r\n"  . $pieces[1]
 			$messages = [
 				'type' => 'text',
-				'text' => $mrgoat
+				'text' =>  $pieces[0] . "\r\n" . $pieces[1]
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
