@@ -46,4 +46,4 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "OK";
+echo "Mr.Goat Line Bot";
