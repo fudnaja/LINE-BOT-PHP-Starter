@@ -14,9 +14,10 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 
-			//$pieces = explode(" ", $text);
+			$pieces = explode(" ", $text);
 			//echo $pieces[0]; // piece1
 			//echo $pieces[1]; // piece2
+			$text = $pieces[0] . $pieces[1]
 
 			// Get replyToken
 			$replyToken = $event['replyToken'];
