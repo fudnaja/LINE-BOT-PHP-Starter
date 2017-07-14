@@ -40,10 +40,8 @@ if (!is_null($events['events'])) {
 			$result = curl_exec($ch);
 			curl_close($ch);
 
-			$name = "Hello:";
-
-			echo $result . $name . "\r\n";
+			echo $result . "\r\n";
 		}
 	}
 }
-echo "Mr.Goat Line Bot";
+echo "Mr.Goat";
