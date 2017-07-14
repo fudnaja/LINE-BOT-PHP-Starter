@@ -40,9 +40,9 @@ if (!is_null($events['events'])) {
 			$result = curl_exec($ch);
 			curl_close($ch);
 
-			$name = 'แพะเอง:';
+			$name = "Hello:";
 
-			echo $result.$name."\r\n";
+			echo $result . $name . "\r\n";
 		}
 	}
 }
